@@ -8,6 +8,9 @@ import json
 from core.storge import save_item
 from core.request import spider
 
+'''
+pyexecjs
+'''
 
 def base_info(html_text, meta,table=False):
     html = etree.HTML(html_text)
@@ -136,6 +139,7 @@ def base_info(html_text, meta,table=False):
 
 def get_branch(code):
     def fun(n):
+        ''''''
         return chr(n % 256)
     t = int(time.time() * 1000)
 
@@ -150,6 +154,7 @@ def get_branch(code):
     s = ''
     for i in resp['data']['v'].split(','):
         s += fun(int(i))
+    '''rtoken=adasgdsagdfgasfd;rtoken=asdfafdsa;doc.cookie['token']=rtoken'''
 
     rtoken = re.findall('rtoken=(.*?);', s)[0]
 

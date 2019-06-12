@@ -1,6 +1,13 @@
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import home.views
 
+'''
+obj.next
+生成器 
+for i in range(1000):
+list = [1.....10000000]
+[i for i in range(10000000)]
+'''
 
 class EnterpriseGenealogy(object):
 
